@@ -1,0 +1,516 @@
+<!-- 65d6576d2b090841 -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dog Store — Pet Shop em Vila Mariana, São Paulo — Clearpathvital</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#FBF8F2;
+    --ink:#211913;
+    --ink-soft:#5d5044;
+    --teal:#0E3D3A;
+    --teal-700:#0a2e2b;
+    --teal-200:#bcd4cf;
+    --gold:#D99A2B;
+    --gold-deep:#b87d18;
+    --gold-soft:#f4e6c6;
+    --sand:#EFE7D6;
+    --line:#e4dac6;
+    --white:#ffffff;
+    --maxw:1140px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    font-family:'Hanken Grotesk',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+    color:var(--ink);
+    background:var(--paper);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,h4{font-family:'Bricolage Grotesque',sans-serif;line-height:1.08;margin:0;font-weight:700;letter-spacing:-.01em;}
+  p{margin:0;}
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+  .nuj6_wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px;}
+  .nuj6_eyebrow{
+    font-size:.74rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--gold-deep);display:inline-flex;align-items:center;gap:9px;
+  }
+  .nuj6_eyebrow::before{content:"";width:24px;height:2px;background:var(--gold);display:inline-block;border-radius:2px;}
+
+  /* ---------- brand mark ---------- */
+  .nuj6_brand{display:flex;align-items:center;gap:12px;}
+  .nuj6_tag{
+    width:42px;height:42px;border-radius:13px;flex:0 0 auto;
+    background:linear-gradient(150deg,var(--gold) 0%,var(--gold-deep) 100%);
+    display:flex;align-items:center;justify-content:center;
+    box-shadow:0 4px 14px rgba(184,125,24,.28);position:relative;
+  }
+  .nuj6_tag::after{content:"";position:absolute;top:7px;right:7px;width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,.85);}
+  .nuj6_tag span{font-family:'Bricolage Grotesque';font-weight:800;color:#241a08;font-size:1.04rem;letter-spacing:-.02em;}
+  .nuj6_brand-name{font-family:'Bricolage Grotesque';font-weight:700;font-size:1.22rem;letter-spacing:-.02em;line-height:1;}
+  .nuj6_brand-sub{font-size:.66rem;letter-spacing:.17em;text-transform:uppercase;color:var(--ink-soft);font-weight:600;margin-top:3px;}
+
+  /* ---------- header ---------- */
+  header{position:sticky;top:0;z-index:50;background:rgba(251,248,242,.86);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);}
+  .nuj6_nav{display:flex;align-items:center;justify-content:space-between;height:74px;}
+  .nuj6_links{display:flex;gap:30px;align-items:center;}
+  .nuj6_links a{font-size:.93rem;font-weight:500;color:var(--ink-soft);transition:color .18s;}
+  .nuj6_links a:hover{color:var(--teal);}
+  .nuj6_btn{
+    display:inline-flex;align-items:center;gap:8px;font-family:'Hanken Grotesk';font-weight:600;
+    font-size:.93rem;padding:12px 22px;border-radius:11px;cursor:pointer;border:0;transition:transform .15s,box-shadow .2s,background .2s;
+  }
+  .nuj6_btn-primary{background:var(--teal);color:#fff;}
+  .nuj6_btn-primary:hover{background:var(--teal-700);transform:translateY(-1px);box-shadow:0 8px 20px rgba(14,61,58,.24);}
+  .nuj6_btn-ghost{background:transparent;color:var(--white);border:1.5px solid rgba(255,255,255,.4);}
+  .nuj6_btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,.08);}
+  .nuj6_btn-gold{background:var(--gold);color:#2a1d06;}
+  .nuj6_btn-gold:hover{background:var(--gold-deep);transform:translateY(-1px);box-shadow:0 8px 20px rgba(184,125,24,.3);}
+  .nuj6_menu-toggle{display:none;background:none;border:0;cursor:pointer;padding:8px;}
+  .nuj6_menu-toggle span{display:block;width:22px;height:2px;background:var(--ink);margin:4px 0;border-radius:2px;transition:.2s;}
+
+  /* ---------- hero ---------- */
+  .nuj6_hero{background:var(--teal);color:#f3efe6;position:relative;overflow:hidden;}
+  .nuj6_hero::before{
+    content:"";position:absolute;right:-180px;top:-120px;width:520px;height:520px;border-radius:50%;
+    background:radial-gradient(circle at center,rgba(217,154,43,.22),transparent 68%);
+  }
+  .nuj6_hero::after{
+    content:"";position:absolute;left:-140px;bottom:-200px;width:460px;height:460px;border-radius:50%;
+    background:radial-gradient(circle at center,rgba(188,212,207,.12),transparent 70%);
+  }
+  .nuj6_hero-inner{position:relative;z-index:2;padding:84px 0 92px;max-width:760px;}
+  .nuj6_hero .nuj6_eyebrow{color:var(--gold);}
+  .nuj6_hero .nuj6_eyebrow::before{background:var(--gold);}
+  .nuj6_hero h1{font-size:clamp(2.35rem,5.4vw,4rem);margin:22px 0 0;color:#fdfaf3;font-weight:700;}
+  .nuj6_hero h1 em{font-style:normal;position:relative;white-space:nowrap;}
+  .nuj6_hero h1 em::after{content:"";position:absolute;left:0;right:0;bottom:.04em;height:.16em;background:var(--gold);border-radius:3px;opacity:.92;}
+  .nuj6_hero p.nuj6_lead{font-size:1.12rem;color:#d4ddd8;margin-top:24px;max-width:600px;}
+  .nuj6_hero-cta{display:flex;gap:14px;margin-top:34px;flex-wrap:wrap;}
+  .nuj6_chips{display:flex;gap:10px;flex-wrap:wrap;margin-top:46px;}
+  .nuj6_chip{
+    font-size:.84rem;font-weight:500;color:#dbe5e0;padding:8px 15px;border-radius:999px;
+    border:1px solid rgba(188,212,207,.28);background:rgba(255,255,255,.04);display:inline-flex;align-items:center;gap:8px;
+  }
+  .nuj6_chip i{width:6px;height:6px;border-radius:50%;background:var(--gold);display:inline-block;font-style:normal;}
+
+  /* ---------- section base ---------- */
+  .nuj6_sec{padding:86px 0;}
+  .nuj6_sec-head{max-width:660px;margin-bottom:48px;}
+  .nuj6_sec-head h2{font-size:clamp(1.8rem,3.6vw,2.6rem);margin:16px 0 0;}
+  .nuj6_sec-head p{color:var(--ink-soft);font-size:1.06rem;margin-top:16px;}
+
+  /* ---------- about ---------- */
+  .nuj6_about{background:var(--paper);}
+  .nuj6_about-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;}
+  .nuj6_about-copy p+p{margin-top:18px;}
+  .nuj6_about-copy p{color:var(--ink-soft);font-size:1.05rem;}
+  .nuj6_about-card{
+    background:var(--teal);color:#eef2ef;border-radius:22px;padding:38px 34px;position:relative;overflow:hidden;
+  }
+  .nuj6_about-card::before{content:"";position:absolute;top:-60px;right:-60px;width:200px;height:200px;border-radius:50%;background:radial-gradient(circle,rgba(217,154,43,.25),transparent 70%);}
+  .nuj6_about-card h3{font-size:1.3rem;color:#fff;position:relative;}
+  .nuj6_stat-row{display:flex;gap:14px;margin-top:26px;position:relative;}
+  .nuj6_stat{flex:1;}
+  .nuj6_stat b{font-family:'Bricolage Grotesque';font-size:1.85rem;font-weight:700;color:var(--gold);display:block;line-height:1;}
+  .nuj6_stat small{font-size:.82rem;color:#c4cfca;display:block;margin-top:8px;}
+  .nuj6_about-card .nuj6_note{font-size:.96rem;color:#cdd6d1;margin-top:26px;position:relative;}
+
+  /* ---------- services ---------- */
+  .nuj6_services{background:var(--sand);}
+  .nuj6_svc-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;}
+  .nuj6_svc{
+    background:var(--white);border:1px solid var(--line);border-radius:18px;padding:30px 28px;
+    transition:transform .2s,box-shadow .2s,border-color .2s;
+  }
+  .nuj6_svc:hover{transform:translateY(-4px);box-shadow:0 16px 34px rgba(33,25,19,.09);border-color:var(--gold-soft);}
+  .nuj6_svc-ic{
+    width:50px;height:50px;border-radius:14px;background:var(--gold-soft);color:var(--gold-deep);
+    display:flex;align-items:center;justify-content:center;margin-bottom:20px;
+  }
+  .nuj6_svc-ic svg{width:25px;height:25px;}
+  .nuj6_svc h3{font-size:1.22rem;margin-bottom:11px;}
+  .nuj6_svc p{color:var(--ink-soft);font-size:.98rem;}
+
+  /* ---------- testimonials ---------- */
+  .nuj6_testi{background:var(--paper);}
+  .nuj6_testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+  .nuj6_quote{background:var(--white);border:1px solid var(--line);border-radius:18px;padding:30px 28px;display:flex;flex-direction:column;}
+  .nuj6_quote .mk{font-family:'Bricolage Grotesque';font-size:2.6rem;color:var(--gold);line-height:.5;height:24px;}
+  .nuj6_quote p{color:var(--ink);font-size:1.02rem;margin:14px 0 22px;flex:1;}
+  .nuj6_who{display:flex;align-items:center;gap:12px;}
+  .av{width:38px;height:38px;border-radius:50%;background:var(--teal);color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Bricolage Grotesque';font-weight:700;font-size:.92rem;}
+  .nuj6_who b{font-size:.95rem;font-weight:600;}
+  .nuj6_who small{display:block;font-size:.8rem;color:var(--ink-soft);}
+
+  /* ---------- contact ---------- */
+  .nuj6_contact{background:var(--teal);color:#eef2ef;}
+  .nuj6_contact-grid{display:grid;grid-template-columns:.92fr 1.08fr;gap:54px;}
+  .nuj6_contact .nuj6_eyebrow{color:var(--gold);}
+  .nuj6_contact .nuj6_eyebrow::before{background:var(--gold);}
+  .nuj6_contact h2{font-size:clamp(1.8rem,3.6vw,2.5rem);color:#fff;margin:16px 0 0;}
+  .nuj6_contact .nuj6_intro{color:#cdd6d1;font-size:1.05rem;margin-top:16px;}
+  .ch{display:flex;gap:14px;align-items:flex-start;margin-top:26px;}
+  .nuj6_ch-ic{width:42px;height:42px;border-radius:12px;background:rgba(255,255,255,.07);border:1px solid rgba(188,212,207,.22);display:flex;align-items:center;justify-content:center;flex:0 0 auto;color:var(--gold);}
+  .nuj6_ch-ic svg{width:20px;height:20px;}
+  .ch b{font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:#9fb2ac;font-weight:600;display:block;margin-bottom:3px;}
+  .ch span{font-size:1.02rem;color:#eef2ef;}
+  .nuj6_form{background:var(--paper);border-radius:22px;padding:34px 32px;}
+  .nuj6_form label{display:block;font-size:.82rem;font-weight:600;color:var(--ink);margin:0 0 7px;letter-spacing:.01em;}
+  .nuj6_field+.nuj6_field{margin-top:18px;}
+  .nuj6_form input,.nuj6_form textarea{
+    width:100%;padding:13px 15px;border:1.5px solid var(--line);border-radius:11px;background:#fff;
+    font-family:inherit;font-size:.98rem;color:var(--ink);transition:border-color .18s,box-shadow .18s;
+  }
+  .nuj6_form input:focus,.nuj6_form textarea:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 3px var(--gold-soft);}
+  .nuj6_form textarea{resize:vertical;min-height:108px;}
+  .nuj6_form .nuj6_btn-gold{width:100%;justify-content:center;margin-top:22px;padding:14px;}
+  .nuj6_form .nuj6_fineprint{font-size:.82rem;color:var(--ink-soft);margin-top:14px;text-align:center;}
+
+  /* ---------- footer ---------- */
+  footer{background:var(--teal-700);color:#c7d1cc;padding:64px 0 30px;}
+  .nuj6_foot-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:44px;}
+  .nuj6_foot-brand .nuj6_brand-name{color:#fff;}
+  .nuj6_foot-brand .nuj6_brand-sub{color:#9fb2ac;}
+  .nuj6_foot-about{font-size:.96rem;color:#a9b6b0;margin-top:18px;max-width:380px;}
+  .nuj6_legal{margin-top:22px;font-size:.88rem;line-height:1.85;color:#bcc8c2;}
+  .nuj6_legal b{color:#eef2ef;font-weight:600;}
+  .nuj6_foot-col h4{font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:#fff;margin-bottom:16px;font-weight:600;}
+  .nuj6_foot-col a,.nuj6_foot-col span{display:block;font-size:.95rem;color:#a9b6b0;margin-bottom:11px;transition:color .18s;}
+  .nuj6_foot-col a:hover{color:var(--gold);cursor:pointer;}
+  .nuj6_foot-bottom{border-top:1px solid rgba(188,212,207,.16);margin-top:48px;padding-top:24px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;font-size:.86rem;color:#8fa19b;}
+  .nuj6_foot-bottom a{color:#8fa19b;}
+  .nuj6_foot-bottom a:hover{color:var(--gold);cursor:pointer;}
+
+  /* ---------- modal ---------- */
+  .modal{position:fixed;inset:0;background:rgba(15,30,28,.6);backdrop-filter:blur(3px);display:none;align-items:center;justify-content:center;z-index:100;padding:24px;}
+  .modal.open{display:flex;}
+  .nuj6_modal-box{background:var(--paper);max-width:680px;width:100%;max-height:85vh;overflow-y:auto;border-radius:20px;padding:42px 40px;position:relative;}
+  .nuj6_modal-box h2{font-size:1.7rem;}
+  .nuj6_modal-box .nuj6_upd{font-size:.86rem;color:var(--ink-soft);margin:8px 0 22px;}
+  .nuj6_modal-box h3{font-size:1.06rem;margin:24px 0 8px;color:var(--teal);}
+  .nuj6_modal-box p{font-size:.97rem;color:var(--ink-soft);margin-top:8px;}
+  .nuj6_modal-close{position:absolute;top:20px;right:20px;width:38px;height:38px;border-radius:50%;border:1px solid var(--line);background:#fff;cursor:pointer;font-size:1.3rem;line-height:1;color:var(--ink);display:flex;align-items:center;justify-content:center;}
+  .nuj6_modal-close:hover{background:var(--sand);}
+
+  /* ---------- reveal ---------- */
+  .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease;}
+  .reveal.in{opacity:1;transform:none;}
+
+  /* ---------- responsive ---------- */
+  @media(max-width:900px){
+    .nuj6_about-grid,.nuj6_contact-grid{grid-template-columns:1fr;gap:40px;}
+    .nuj6_testi-grid{grid-template-columns:1fr;}
+    .nuj6_foot-grid{grid-template-columns:1fr;gap:34px;}
+  }
+  @media(max-width:760px){
+    .nuj6_links{position:fixed;top:74px;left:0;right:0;background:var(--paper);flex-direction:column;gap:0;padding:8px 24px 20px;border-bottom:1px solid var(--line);transform:translateY(-130%);transition:transform .28s;align-items:stretch;}
+    .nuj6_links.show{transform:translateY(0);}
+    .nuj6_links a{padding:13px 0;border-bottom:1px solid var(--line);}
+    .nuj6_links .nuj6_btn{margin-top:12px;justify-content:center;}
+    .nuj6_menu-toggle{display:block;}
+    .nuj6_svc-grid{grid-template-columns:1fr;}
+    .nuj6_hero-inner{padding:60px 0 66px;}
+    .nuj6_sec{padding:62px 0;}
+    .nuj6_modal-box{padding:32px 24px;}
+  }
+  @media(prefers-reduced-motion:reduce){
+    *{scroll-behavior:auto;}
+    .reveal{transition:none;opacity:1;transform:none;}
+  }
+</style>
+
+<link rel="canonical" href="https://clearpathvital.online/">
+<meta name="description" content="Informações relevantes e atualizadas em clearpathvital.online. Descubra tudo que precisa saber nesta página exclusiva.">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://clearpathvital.online/">
+<meta property="og:site_name" content="clearpathvital.online">
+<meta property="og:description" content="Informações relevantes e atualizadas em clearpathvital.online. Descubra tudo que precisa saber nesta página exclusiva.">
+<meta property="og:locale" content="pt_BR">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:domain" content="clearpathvital.online">
+<meta name="generator" content="cms-e8742e8e61b8">
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Clearpathvital","url":"https://clearpathvital.online/","datePublished":"2024-04-05","dateModified":"2026-03-20","inLanguage":"pt-BR","isPartOf":{"@type":"WebSite","name":"Clearpathvital","url":"https://clearpathvital.online/"},"publisher":{"@type":"Organization","name":"Clearpathvital","url":"https://clearpathvital.online/"}}</script>
+
+<style>:root{--yybl-p:rgb(192,59,143);--yybl-s:rgb(152,203,136);--yybl-id:'db04c585b165'}@keyframes kksstswy{from{opacity:1}to{opacity:1}}.pppnxf{position:absolute;width:0;height:0;overflow:hidden;pointer-events:none}</style>
+<!-- b:o9iw3rn3wj v5.41.7 -->
+</head>
+<body data-s="cf0c59a3" data-p="sznbz4">
+<noscript><div style="padding:20px;text-align:center;"><p>Para uma melhor experiência em clearpathvital, ative o JavaScript no seu navegador.</p></div></noscript>
+
+<!-- HEADER -->
+<header>
+  <div class="nuj6_wrap nuj6_nav">
+    <a href="#inicio" class="nuj6_brand" aria-label="Dog Store — início">
+      <div class="nuj6_tag"><span>DS</span></div>
+      <div>
+        <div class="nuj6_brand-name">Dog Store</div>
+        <div class="nuj6_brand-sub">Pet Shop · Vila Mariana</div>
+      </div>
+    </a>
+    <nav class="nuj6_links" id="menu">
+      <a href="#sobre">Sobre</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#depoimentos">Depoimentos</a>
+      <a href="#contato">Contato</a>
+      <a href="#contato" class="nuj6_btn nuj6_btn-primary">Falar com a loja</a>
+    </nav>
+    <button class="nuj6_menu-toggle" id="toggle" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="nuj6_hero" id="inicio">
+  <div class="nuj6_wrap">
+    <div class="nuj6_hero-inner">
+      <span class="nuj6_eyebrow">Pet shop em Vila Mariana · desde 2008</span>
+      <h1>O cuidado completo que o seu pet merece, <em>pertinho de casa</em>.</h1>
+      <p class="nuj6_lead">A Dog Store é um pet shop de bairro em Vila Mariana, São Paulo. Reunimos em um só lugar produtos para o dia a dia do seu animal, farmácia veterinária, atendimento clínico e serviços de banho e tosa — com uma equipe que conhece e gosta de bicho.</p>
+      <div class="nuj6_hero-cta">
+        <a href="#contato" class="nuj6_btn nuj6_btn-gold">Falar com a loja</a>
+        <a href="#servicos" class="nuj6_btn nuj6_btn-ghost">Ver nossos serviços</a>
+      </div>
+      <div class="nuj6_chips">
+        <span class="nuj6_chip"><i></i>Atuando desde 2008</span>
+        <span class="nuj6_chip"><i></i>Vila Mariana — São Paulo/SP</span>
+        <span class="nuj6_chip"><i></i>Loja • Clínica • Banho e tosa</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="nuj6_sec nuj6_about" id="sobre">
+  <div class="nuj6_wrap nuj6_about-grid">
+    <div class="nuj6_about-copy reveal">
+      <span class="nuj6_eyebrow">Sobre a Dog Store</span>
+      <h2 style="font-size:clamp(1.8rem,3.6vw,2.6rem);margin-top:16px;">Uma loja de bairro feita por quem entende de pet</h2>
+      <p style="margin-top:22px;">Desde 2008, a Dog Store atende as famílias de Vila Mariana e região com tudo o que o pet precisa no dia a dia. Começamos como uma loja de bairro e seguimos com a mesma proposta: um atendimento próximo, honesto e atencioso, do balcão ao consultório.</p>
+      <p>Trabalhamos com marcas reconhecidas de ração, acessórios e itens de higiene, mantemos uma farmácia veterinária para as necessidades do seu animal e oferecemos atendimento clínico e serviços de banho e tosa na própria loja. Assim, o tutor resolve o que precisa em um só lugar, com a tranquilidade de quem já conhece o time.</p>
+    </div>
+    <div class="nuj6_about-card reveal">
+      <h3>Tudo para o seu animal, em um só endereço</h3>
+      <div class="nuj6_stat-row">
+        <div class="nuj6_stat"><b>2008</b><small>Ano de fundação</small></div>
+        <div class="nuj6_stat"><b>4</b><small>Frentes de atendimento</small></div>
+      </div>
+      <p class="nuj6_note">Produtos, farmácia veterinária, atendimento clínico e banho e tosa — reunidos em uma única loja, no bairro da Vila Mariana.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="nuj6_sec nuj6_services" id="servicos">
+  <div class="nuj6_wrap">
+    <div class="nuj6_sec-head reveal">
+      <span class="nuj6_eyebrow">O que oferecemos</span>
+      <h2>Cuidado do dia a dia à saúde do seu pet</h2>
+      <p>Reunimos produtos e serviços essenciais para o bem-estar do seu animal, com o atendimento de quem conhece cada tutor pelo nome.</p>
+    </div>
+    <div class="nuj6_svc-grid">
+      <div class="nuj6_svc reveal">
+        <div class="nuj6_svc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h14l-1 11a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1L5 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg></div>
+        <h3>Produtos para o seu pet</h3>
+        <p>Ração, petiscos, acessórios e itens de higiene das principais marcas, para cães, gatos e outros animais de estimação. O essencial do dia a dia, sempre à mão.</p>
+      </div>
+      <div class="nuj6_svc reveal">
+        <div class="nuj6_svc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M3 12h18" stroke-width="2"/><rect x="4" y="4" width="16" height="16" rx="3"/></svg></div>
+        <h3>Farmácia veterinária</h3>
+        <p>Medicamentos e produtos veterinários para cuidar da saúde do seu animal, com a orientação da nossa equipe sobre cada item.</p>
+      </div>
+      <div class="nuj6_svc reveal">
+        <div class="nuj6_svc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 7.6a4.6 4.6 0 0 0-7.8-2.5L12 6l-1-1A4.6 4.6 0 1 0 4.5 11.6L12 19l7.5-7.4a4.6 4.6 0 0 0 1.3-4Z"/></svg></div>
+        <h3>Atendimento clínico</h3>
+        <p>Consultas e atendimento veterinário na própria loja, para acompanhar a saúde do seu pet de perto e com cuidado.</p>
+      </div>
+      <div class="nuj6_svc reveal">
+        <div class="nuj6_svc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 4v6a5 5 0 0 0 10 0V4"/><path d="M5 20h14"/><path d="M12 15v5"/></svg></div>
+        <h3>Banho e tosa</h3>
+        <p>Serviços de higiene e embelezamento feitos com atenção ao bem-estar do animal, deixando seu pet limpo, cheiroso e confortável.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="nuj6_sec nuj6_testi" id="depoimentos">
+  <div class="nuj6_wrap">
+    <div class="nuj6_sec-head reveal">
+      <span class="nuj6_eyebrow">Quem é da casa</span>
+      <h2>Tutores que confiam na Dog Store</h2>
+      <p>Famílias do bairro que escolhem a gente para o cuidado do dia a dia dos seus animais.</p>
+    </div>
+    <div class="nuj6_testi-grid">
+      <div class="nuj6_quote reveal">
+        <div class="mk">&ldquo;</div>
+        <p>Atendimento atencioso e gente que realmente conhece os bichos. Levo meus dois cachorros desde que me mudei pro bairro.</p>
+        <div class="nuj6_who"><div class="av">CM</div><div><b>Carla M.</b><small>Tutora · Vila Mariana</small></div></div>
+      </div>
+      <div class="nuj6_quote reveal">
+        <div class="mk">&ldquo;</div>
+        <p>Resolvo tudo no mesmo lugar: ração, banho e a consulta da veterinária. Equipe sempre prestativa e honesta.</p>
+        <div class="nuj6_who"><div class="av">RA</div><div><b>Rodrigo A.</b><small>Tutor · São Paulo</small></div></div>
+      </div>
+      <div class="nuj6_quote reveal">
+        <div class="mk">&ldquo;</div>
+        <p>Loja de bairro com atendimento de quem se importa de verdade. Recomendo para quem mora na região.</p>
+        <div class="nuj6_who"><div class="av">PS</div><div><b>Patrícia S.</b><small>Tutora · Vila Mariana</small></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="nuj6_sec nuj6_contact" id="contato">
+  <div class="nuj6_wrap nuj6_contact-grid">
+    <div class="reveal">
+      <span class="nuj6_eyebrow">Fale com a gente</span>
+      <h2>Estamos por aqui para ajudar você e o seu pet</h2>
+      <p class="nuj6_intro">Tem uma dúvida sobre produtos, farmácia, atendimento clínico ou banho e tosa? Entre em contato pelos nossos canais ou passe na loja.</p>
+      <div class="ch">
+        <div class="nuj6_ch-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.6a2 2 0 0 1-.5 2.1L8.1 9.5a16 16 0 0 0 6 6l1.1-1.1a2 2 0 0 1 2.1-.5c.8.3 1.7.5 2.6.6a2 2 0 0 1 1.7 2Z"/></svg></div>
+        <div><b>Telefone</b><span>(11) 3104-6383 &nbsp;·&nbsp; (11) 3105-8573</span></div>
+      </div>
+      <div class="ch">
+        <div class="nuj6_ch-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg></div>
+        <div><b>E-mail</b><span>wichai24872487@gmail.com</span></div>
+      </div>
+      <div class="ch">
+        <div class="nuj6_ch-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></div>
+        <div><b>Endereço</b><span>R. Baltazar Lisboa, 228 — Vila Mariana<br>São Paulo/SP — CEP 04.110-060</span></div>
+      </div>
+      <div class="ch">
+        <div class="nuj6_ch-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+        <div><b>Atendimento</b><span>De segunda a sábado, em horário comercial</span></div>
+      </div>
+    </div>
+    <div class="nuj6_form reveal">
+      <div class="nuj6_field"><label for="nome">Nome</label><input id="nome" type="text" placeholder="Como podemos te chamar?"></div>
+      <div class="nuj6_field"><label for="email">E-mail</label><input id="email" type="email" placeholder="seu@email.com"></div>
+      <div class="nuj6_field"><label for="msg">Mensagem</label><textarea id="msg" placeholder="Conte o que você precisa para o seu pet"></textarea></div>
+      <button class="nuj6_btn nuj6_btn-gold" id="send">Enviar mensagem</button>
+      <p class="nuj6_fineprint">Ao enviar, você concorda com a nossa Política de Privacidade. O envio de uma mensagem não constitui compra ou contratação de serviço.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="nuj6_wrap">
+    <div class="nuj6_foot-grid">
+      <div class="nuj6_foot-brand">
+        <div class="nuj6_brand">
+          <div class="nuj6_tag"><span>DS</span></div>
+          <div><div class="nuj6_brand-name">Dog Store</div><div class="nuj6_brand-sub">Pet Shop · Vila Mariana</div></div>
+        </div>
+        <p class="nuj6_foot-about">Pet shop de bairro em Vila Mariana, São Paulo, desde 2008. Produtos, farmácia veterinária, atendimento clínico e banho e tosa para o seu melhor amigo.</p>
+        <div class="nuj6_legal">
+          <b>AUGUSTO &amp; AUGUSTO PET SHOP LTDA</b><br>
+          CNPJ: 09.470.904/0001-55<br>
+          R. Baltazar Lisboa, 228 — Vila Mariana<br>
+          São Paulo/SP — CEP 04.110-060<br>
+          Telefone: (11) 3104-6383 / (11) 3105-8573<br>
+          E-mail: wichai24872487@gmail.com
+        </div>
+      </div>
+      <div class="nuj6_foot-col">
+        <h4>Navegação</h4>
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre nós</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#depoimentos">Depoimentos</a>
+        <a href="#contato">Contato</a>
+      </div>
+      <div class="nuj6_foot-col">
+        <h4>Institucional</h4>
+        <a onclick="openModal('privacidade')">Política de Privacidade</a>
+        <a onclick="openModal('termos')">Termos de Uso</a>
+        <a href="#contato">Atendimento</a>
+      </div>
+    </div>
+    <div class="nuj6_foot-bottom">
+      <span>© 2026 Dog Store — Todos os direitos reservados.</span>
+      <span><a onclick="openModal('privacidade')">Privacidade</a> &nbsp;·&nbsp; <a onclick="openModal('termos')">Termos</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- MODAL: PRIVACIDADE -->
+<div class="modal" id="privacidade">
+  <div class="nuj6_modal-box">
+    <button class="nuj6_modal-close" onclick="closeModal('privacidade')" aria-label="Fechar">×</button>
+    <h2>Política de Privacidade</h2>
+    <p class="nuj6_upd">Última atualização: junho de 2026</p>
+    <p>A AUGUSTO &amp; AUGUSTO PET SHOP LTDA (CNPJ 09.470.904/0001-55), que atua sob o nome Dog Store, respeita a sua privacidade e está comprometida com a proteção dos dados pessoais dos seus clientes e visitantes, em conformidade com a Lei nº 13.709/2018 (Lei Geral de Proteção de Dados — LGPD).</p>
+    <h3>1. Dados que coletamos</h3>
+    <p>Coletamos apenas os dados fornecidos voluntariamente por você, como nome, e-mail e mensagem, por meio do nosso formulário de contato, com a finalidade de responder solicitações e prestar atendimento.</p>
+    <h3>2. Finalidade do uso</h3>
+    <p>Os dados são utilizados exclusivamente para contato, esclarecimento de dúvidas e comunicação relacionada aos nossos produtos e serviços. Não comercializamos nem compartilhamos seus dados com terceiros para fins de marketing.</p>
+    <h3>3. Armazenamento e segurança</h3>
+    <p>Adotamos medidas técnicas e organizacionais razoáveis para proteger os dados coletados contra acesso não autorizado, perda ou uso indevido, mantendo-os apenas pelo tempo necessário ao atendimento da finalidade.</p>
+    <h3>4. Seus direitos</h3>
+    <p>Você pode, a qualquer momento, solicitar acesso, correção ou exclusão dos seus dados pessoais, bastando entrar em contato pelo e-mail wichai24872487@gmail.com.</p>
+    <h3>5. Alterações</h3>
+    <p>Esta política pode ser atualizada periodicamente. Recomendamos a consulta regular a esta página. Dúvidas podem ser encaminhadas para wichai24872487@gmail.com.</p>
+  </div>
+</div>
+
+<!-- MODAL: TERMOS -->
+<div class="modal" id="termos">
+  <div class="nuj6_modal-box">
+    <button class="nuj6_modal-close" onclick="closeModal('termos')" aria-label="Fechar">×</button>
+    <h2>Termos de Uso</h2>
+    <p class="nuj6_upd">Última atualização: junho de 2026</p>
+    <p>Estes Termos de Uso regulam o acesso e a utilização deste site, mantido pela AUGUSTO &amp; AUGUSTO PET SHOP LTDA (CNPJ 09.470.904/0001-55), que atua sob o nome Dog Store, com sede na R. Baltazar Lisboa, 228, Vila Mariana, São Paulo/SP, CEP 04.110-060.</p>
+    <h3>1. Objeto</h3>
+    <p>Este site tem caráter institucional e informativo, apresentando os produtos e serviços oferecidos pela Dog Store, bem como nossos canais de contato e atendimento.</p>
+    <h3>2. Uso das informações</h3>
+    <p>As informações aqui apresentadas têm finalidade informativa. Valores, disponibilidade de produtos e condições de serviço podem ser confirmados diretamente com a nossa equipe pelos canais de contato.</p>
+    <h3>3. Contato e atendimento</h3>
+    <p>As solicitações enviadas pelo formulário de contato são respondidas pela nossa equipe pelos canais informados. O envio de uma mensagem não constitui, por si só, compra ou contratação de serviço.</p>
+    <h3>4. Propriedade do conteúdo</h3>
+    <p>Os textos, marcas e elementos visuais deste site pertencem à AUGUSTO &amp; AUGUSTO PET SHOP LTDA e não podem ser reproduzidos sem autorização.</p>
+    <h3>5. Alterações</h3>
+    <p>Estes termos podem ser atualizados periodicamente. Recomendamos a consulta regular a esta página. Dúvidas podem ser encaminhadas para wichai24872487@gmail.com.</p>
+  </div>
+</div>
+
+<script>
+  // mobile menu
+  var toggle=document.getElementById('toggle'),menu=document.getElementById('menu');
+  toggle.addEventListener('click',function(){menu.classList.toggle('show');});
+  menu.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){menu.classList.remove('show');});});
+
+  // modals
+  function openModal(id){document.getElementById(id).classList.add('open');document.body.style.overflow='hidden';}
+  function closeModal(id){document.getElementById(id).classList.remove('open');document.body.style.overflow='';}
+  document.querySelectorAll('.modal').forEach(function(m){m.addEventListener('click',function(e){if(e.target===m){m.classList.remove('open');document.body.style.overflow='';}});});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'){document.querySelectorAll('.modal.open').forEach(function(m){m.classList.remove('open');document.body.style.overflow='';});}});
+
+  // contact form
+  document.getElementById('send').addEventListener('click',function(){
+    var n=document.getElementById('nome').value.trim();
+    alert('Obrigado'+(n?', '+n:'')+'! Recebemos a sua mensagem e em breve a nossa equipe entrará em contato.');
+    document.getElementById('nome').value='';document.getElementById('email').value='';document.getElementById('msg').value='';
+  });
+
+  // scroll reveal
+  var io=new IntersectionObserver(function(entries){entries.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}});},{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+</script>
+<footer style="text-align:center;padding:20px 10px;font-size:11px;color:#999;margin-top:40px;border-top:1px solid #eee"><p>© 2024 Clearpathvital. Todos os direitos reservados. Este conteúdo é protegido por direitos autorais. | <a href="https://clearpathvital.online/" style="color:#999;text-decoration:none">clearpathvital.online</a></p></footer>
+</body>
+</html>
+
+<!-- c65b61e09cea167c4ed1b48c -->
